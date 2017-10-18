@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60B4C9FB61C1BD1319EE6864 /* Pods_FindFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD9EA8A9D1893D9BDB860DF /* Pods_FindFriends.framework */; };
+		6A61B4FAC34D8FB6403E84BF /* Pods_FindMyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CB4B0C59F0138D8421FAF0 /* Pods_FindMyFriends.framework */; };
+		6C0BD7461F41EC8700261336 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BD7451F41EC8700261336 /* LoginViewController.swift */; };
+		6C0BD7481F42080100261336 /* ProfileUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BD7471F42080100261336 /* ProfileUserTableViewCell.swift */; };
+		6C0F11331F03623000DAEB6F /* MyTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F11321F03623000DAEB6F /* MyTimerManager.swift */; };
+		6C155CBE1F04B617006ED291 /* BasicHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C155CBD1F04B617006ED291 /* BasicHeaderTableViewCell.swift */; };
+		6C1E6EE81EF8DEB900C061C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E6EE71EF8DEB900C061C4 /* AppDelegate.swift */; };
+		6C1E6EEA1EF8DEB900C061C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E6EE91EF8DEB900C061C4 /* ViewController.swift */; };
+		6C1E6EED1EF8DEB900C061C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E6EEB1EF8DEB900C061C4 /* Main.storyboard */; };
+		6C1E6EEF1EF8DEB900C061C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E6EEE1EF8DEB900C061C4 /* Assets.xcassets */; };
+		6C1E6EF21EF8DEB900C061C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E6EF01EF8DEB900C061C4 /* LaunchScreen.storyboard */; };
+		6C1E6EFD1EF8DF0400C061C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E6EFC1EF8DF0400C061C4 /* CoreLocation.framework */; };
+		6C2DF86F1F08AEDF00D089F7 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF86E1F08AEDF00D089F7 /* PickerViewController.swift */; };
+		6C36A5441F4522D000623131 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C36A5431F4522D000623131 /* UpdateUserDataViewController.swift */; };
+		6C36A5481F4544C400623131 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C36A5471F4544C400623131 /* Extensions.swift */; };
+		6C36A56B1F45701400623131 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C36A56A1F45701400623131 /* FriendTableViewCell.swift */; };
+		6C68E50E1F03E22C0058999B /* LocationRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68E50D1F03E22C0058999B /* LocationRecordTableViewCell.swift */; };
+		6C68E5121F03EB400058999B /* ShowLocationRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68E5111F03EB400058999B /* ShowLocationRecordViewController.swift */; };
+		6C769C1C1EFF5B160068F27D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C769C1B1EFF5B160068F27D /* libsqlite3.0.tbd */; };
+		6C769C201EFF85EE0068F27D /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C1F1EFF85EE0068F27D /* FriendsViewController.swift */; };
+		6C769C221EFFD6DF0068F27D /* SetUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C211EFFD6DF0068F27D /* SetUpTableViewController.swift */; };
+		6C769C241EFFD9040068F27D /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C231EFFD9040068F27D /* ProfileManager.swift */; };
+		6C769C261EFFE2990068F27D /* ShareingLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C251EFFE2990068F27D /* ShareingLocationTableViewCell.swift */; };
+		6C769C281EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C271EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift */; };
+		6C769C2D1EFFF82D0068F27D /* SQLiteConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C2C1EFFF82D0068F27D /* SQLiteConnect.swift */; };
+		6C9A8BB61EFD5DCF0013C8B4 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A8BB51EFD5DCF0013C8B4 /* ServiceManager.swift */; };
+		6CA5BDEC1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5BDEB1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift */; };
+		6CA9CDB11F5463FA00F825DD /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6CA9CDB01F5463FA00F825DD /* bell.mp3 */; };
+		6CA9CDF61F55A0F700F825DD /* NickMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA9CDF51F55A0F700F825DD /* NickMKAnnotationView.swift */; };
+		6CB73D3E1F05070D00816A92 /* sqlite3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6CB73D3D1F05070D00816A92 /* sqlite3.sqlite */; };
+		6CB73D401F05299F00816A92 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB73D3F1F05299F00816A92 /* TimerViewController.swift */; };
+		6CB7B9931F5EF8CB00A16556 /* SearchImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7B9921F5EF8CB00A16556 /* SearchImageTableViewCell.swift */; };
+		6CC196FA1F0DC30D00ABF518 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC196F91F0DC30D00ABF518 /* Reachability.m */; };
+		6CD5BAA91F02923800134A09 /* MyLocationRecordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5BAA81F02923800134A09 /* MyLocationRecordsManager.swift */; };
+		6CF4FF791F43277900502EFA /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FF781F43277900502EFA /* AddFriendViewController.swift */; };
+		6CF4FF7B1F434BCF00502EFA /* ManageFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FF7A1F434BCF00502EFA /* ManageFriendsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CDF4C0E8D5334F6CDC53A14 /* Pods-FindMyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyFriends/Pods-FindMyFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		4BD9EA8A9D1893D9BDB860DF /* Pods_FindFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0BD7451F41EC8700261336 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6C0BD7471F42080100261336 /* ProfileUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUserTableViewCell.swift; sourceTree = "<group>"; };
+		6C0F11321F03623000DAEB6F /* MyTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimerManager.swift; sourceTree = "<group>"; };
+		6C155CBD1F04B617006ED291 /* BasicHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		6C1E6EE41EF8DEB900C061C4 /* FindMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1E6EE71EF8DEB900C061C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C1E6EE91EF8DEB900C061C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C1E6EEC1EF8DEB900C061C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C1E6EEE1EF8DEB900C061C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C1E6EF11EF8DEB900C061C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C1E6EF31EF8DEB900C061C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1E6EFC1EF8DF0400C061C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6C1FC08C1F51BF9000371124 /* FindMyFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindMyFriends.entitlements; sourceTree = "<group>"; };
+		6C2DF86E1F08AEDF00D089F7 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		6C36A5431F4522D000623131 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
+		6C36A5471F4544C400623131 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6C36A56A1F45701400623131 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		6C68E50D1F03E22C0058999B /* LocationRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRecordTableViewCell.swift; sourceTree = "<group>"; };
+		6C68E5111F03EB400058999B /* ShowLocationRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLocationRecordViewController.swift; sourceTree = "<group>"; };
+		6C769C1B1EFF5B160068F27D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		6C769C1F1EFF85EE0068F27D /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		6C769C211EFFD6DF0068F27D /* SetUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpTableViewController.swift; sourceTree = "<group>"; };
+		6C769C231EFFD9040068F27D /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		6C769C251EFFE2990068F27D /* ShareingLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareingLocationTableViewCell.swift; sourceTree = "<group>"; };
+		6C769C271EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundUpdateBodyTableViewCell.swift; sourceTree = "<group>"; };
+		6C769C2B1EFFF77A0068F27D /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		6C769C2C1EFFF82D0068F27D /* SQLiteConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteConnect.swift; sourceTree = "<group>"; };
+		6C9A8BB51EFD5DCF0013C8B4 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		6CA5BDEB1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		6CA9CDB01F5463FA00F825DD /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		6CA9CDF51F55A0F700F825DD /* NickMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NickMKAnnotationView.swift; sourceTree = "<group>"; };
+		6CB73D3D1F05070D00816A92 /* sqlite3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sqlite3.sqlite; sourceTree = "<group>"; };
+		6CB73D3F1F05299F00816A92 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		6CB7B9921F5EF8CB00A16556 /* SearchImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImageTableViewCell.swift; sourceTree = "<group>"; };
+		6CC196F81F0DC30D00ABF518 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6CC196F91F0DC30D00ABF518 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6CD5BAA81F02923800134A09 /* MyLocationRecordsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLocationRecordsManager.swift; sourceTree = "<group>"; };
+		6CF4FF781F43277900502EFA /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		6CF4FF7A1F434BCF00502EFA /* ManageFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageFriendsTableViewController.swift; sourceTree = "<group>"; };
+		70CB4B0C59F0138D8421FAF0 /* Pods_FindMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FB5D22DD0AFB925C94C94B /* Pods-FindFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindFriends/Pods-FindFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		ED9E7922643FC6A74955582B /* Pods-FindFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindFriends/Pods-FindFriends.release.xcconfig"; sourceTree = "<group>"; };
+		FD84EA1712E58BA7D9DB3478 /* Pods-FindMyFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyFriends/Pods-FindMyFriends.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C1E6EE11EF8DEB900C061C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C769C1C1EFF5B160068F27D /* libsqlite3.0.tbd in Frameworks */,
+				6C1E6EFD1EF8DF0400C061C4 /* CoreLocation.framework in Frameworks */,
+				6A61B4FAC34D8FB6403E84BF /* Pods_FindMyFriends.framework in Frameworks */,
+				60B4C9FB61C1BD1319EE6864 /* Pods_FindFriends.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C1A59F51F0150D400E8B26F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C36A56A1F45701400623131 /* FriendTableViewCell.swift */,
+				6C68E50D1F03E22C0058999B /* LocationRecordTableViewCell.swift */,
+				6C155CBD1F04B617006ED291 /* BasicHeaderTableViewCell.swift */,
+				6C769C271EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift */,
+				6C769C251EFFE2990068F27D /* ShareingLocationTableViewCell.swift */,
+				6C0BD7471F42080100261336 /* ProfileUserTableViewCell.swift */,
+				6CA5BDEB1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift */,
+				6CB7B9921F5EF8CB00A16556 /* SearchImageTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		6C1E6EDB1EF8DEB900C061C4 = {
+			isa = PBXGroup;
+			children = (
+				6C1E6EE61EF8DEB900C061C4 /* FindMyFriends */,
+				6CE8663B1F07727C00684672 /* Other */,
+				6C1E6EE51EF8DEB900C061C4 /* Products */,
+				6C1E6EF91EF8DEFD00C061C4 /* Frameworks */,
+				AD724489088D599FF593B6C6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6C1E6EE51EF8DEB900C061C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E6EE41EF8DEB900C061C4 /* FindMyFriends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C1E6EE61EF8DEB900C061C4 /* FindMyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				6C1FC08C1F51BF9000371124 /* FindMyFriends.entitlements */,
+				6CE8663A1F076CC700684672 /* Model */,
+				6CE866391F076C3200684672 /* View */,
+				6CE866381F076BFD00684672 /* Controller */,
+			);
+			path = FindMyFriends;
+			sourceTree = "<group>";
+		};
+		6C1E6EF91EF8DEFD00C061C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C769C1B1EFF5B160068F27D /* libsqlite3.0.tbd */,
+				6C1E6EFC1EF8DF0400C061C4 /* CoreLocation.framework */,
+				70CB4B0C59F0138D8421FAF0 /* Pods_FindMyFriends.framework */,
+				4BD9EA8A9D1893D9BDB860DF /* Pods_FindFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CE866381F076BFD00684672 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E6EE91EF8DEB900C061C4 /* ViewController.swift */,
+				6C36A5471F4544C400623131 /* Extensions.swift */,
+				6C36A5431F4522D000623131 /* UpdateUserDataViewController.swift */,
+				6C769C1F1EFF85EE0068F27D /* FriendsViewController.swift */,
+				6C0BD7451F41EC8700261336 /* LoginViewController.swift */,
+				6C769C211EFFD6DF0068F27D /* SetUpTableViewController.swift */,
+				6C68E5111F03EB400058999B /* ShowLocationRecordViewController.swift */,
+				6CB73D3F1F05299F00816A92 /* TimerViewController.swift */,
+				6C2DF86E1F08AEDF00D089F7 /* PickerViewController.swift */,
+				6CF4FF781F43277900502EFA /* AddFriendViewController.swift */,
+				6CF4FF7A1F434BCF00502EFA /* ManageFriendsTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6CE866391F076C3200684672 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CA9CDF51F55A0F700F825DD /* NickMKAnnotationView.swift */,
+				6C1E6EEB1EF8DEB900C061C4 /* Main.storyboard */,
+				6C1A59F51F0150D400E8B26F /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6CE8663A1F076CC700684672 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CC196F81F0DC30D00ABF518 /* Reachability.h */,
+				6CC196F91F0DC30D00ABF518 /* Reachability.m */,
+				6C769C2C1EFFF82D0068F27D /* SQLiteConnect.swift */,
+				6CD5BAA81F02923800134A09 /* MyLocationRecordsManager.swift */,
+				6C9A8BB51EFD5DCF0013C8B4 /* ServiceManager.swift */,
+				6C769C231EFFD9040068F27D /* ProfileManager.swift */,
+				6C0F11321F03623000DAEB6F /* MyTimerManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6CE8663B1F07727C00684672 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6CA9CDB01F5463FA00F825DD /* bell.mp3 */,
+				6CB73D3D1F05070D00816A92 /* sqlite3.sqlite */,
+				6C1E6EE71EF8DEB900C061C4 /* AppDelegate.swift */,
+				6C769C2B1EFFF77A0068F27D /* BridgeHeader.h */,
+				6C1E6EEE1EF8DEB900C061C4 /* Assets.xcassets */,
+				6C1E6EF01EF8DEB900C061C4 /* LaunchScreen.storyboard */,
+				6C1E6EF31EF8DEB900C061C4 /* Info.plist */,
+			);
+			name = Other;
+			path = FindMyFriends;
+			sourceTree = "<group>";
+		};
+		AD724489088D599FF593B6C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CDF4C0E8D5334F6CDC53A14 /* Pods-FindMyFriends.debug.xcconfig */,
+				FD84EA1712E58BA7D9DB3478 /* Pods-FindMyFriends.release.xcconfig */,
+				C1FB5D22DD0AFB925C94C94B /* Pods-FindFriends.debug.xcconfig */,
+				ED9E7922643FC6A74955582B /* Pods-FindFriends.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C1E6EE31EF8DEB900C061C4 /* FindMyFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1E6EF61EF8DEB900C061C4 /* Build configuration list for PBXNativeTarget "FindMyFriends" */;
+			buildPhases = (
+				B9684DFB2AC4A1471B299A97 /* [CP] Check Pods Manifest.lock */,
+				6C1E6EE01EF8DEB900C061C4 /* Sources */,
+				6C1E6EE11EF8DEB900C061C4 /* Frameworks */,
+				6C1E6EE21EF8DEB900C061C4 /* Resources */,
+				579F684AE96AB420A3AB6186 /* [CP] Embed Pods Frameworks */,
+				7C5DB75ADDF09A50B774AC51 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyFriends;
+			productName = FindMyFriends;
+			productReference = 6C1E6EE41EF8DEB900C061C4 /* FindMyFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C1E6EDC1EF8DEB900C061C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Nick;
+				TargetAttributes = {
+					6C1E6EE31EF8DEB900C061C4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 93QT5L8PP6;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6C1E6EDF1EF8DEB900C061C4 /* Build configuration list for PBXProject "FindMyFriends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C1E6EDB1EF8DEB900C061C4;
+			productRefGroup = 6C1E6EE51EF8DEB900C061C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C1E6EE31EF8DEB900C061C4 /* FindMyFriends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C1E6EE21EF8DEB900C061C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1E6EF21EF8DEB900C061C4 /* LaunchScreen.storyboard in Resources */,
+				6C1E6EEF1EF8DEB900C061C4 /* Assets.xcassets in Resources */,
+				6C1E6EED1EF8DEB900C061C4 /* Main.storyboard in Resources */,
+				6CB73D3E1F05070D00816A92 /* sqlite3.sqlite in Resources */,
+				6CA9CDB11F5463FA00F825DD /* bell.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		579F684AE96AB420A3AB6186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyFriends/Pods-FindMyFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C5DB75ADDF09A50B774AC51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyFriends/Pods-FindMyFriends-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9684DFB2AC4A1471B299A97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C1E6EE01EF8DEB900C061C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0BD7481F42080100261336 /* ProfileUserTableViewCell.swift in Sources */,
+				6C769C201EFF85EE0068F27D /* FriendsViewController.swift in Sources */,
+				6C769C2D1EFFF82D0068F27D /* SQLiteConnect.swift in Sources */,
+				6CA9CDF61F55A0F700F825DD /* NickMKAnnotationView.swift in Sources */,
+				6C68E5121F03EB400058999B /* ShowLocationRecordViewController.swift in Sources */,
+				6CA5BDEC1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift in Sources */,
+				6C769C261EFFE2990068F27D /* ShareingLocationTableViewCell.swift in Sources */,
+				6C0BD7461F41EC8700261336 /* LoginViewController.swift in Sources */,
+				6CD5BAA91F02923800134A09 /* MyLocationRecordsManager.swift in Sources */,
+				6C1E6EEA1EF8DEB900C061C4 /* ViewController.swift in Sources */,
+				6C36A5441F4522D000623131 /* UpdateUserDataViewController.swift in Sources */,
+				6C68E50E1F03E22C0058999B /* LocationRecordTableViewCell.swift in Sources */,
+				6C769C241EFFD9040068F27D /* ProfileManager.swift in Sources */,
+				6C0F11331F03623000DAEB6F /* MyTimerManager.swift in Sources */,
+				6C155CBE1F04B617006ED291 /* BasicHeaderTableViewCell.swift in Sources */,
+				6CB73D401F05299F00816A92 /* TimerViewController.swift in Sources */,
+				6CF4FF7B1F434BCF00502EFA /* ManageFriendsTableViewController.swift in Sources */,
+				6CB7B9931F5EF8CB00A16556 /* SearchImageTableViewCell.swift in Sources */,
+				6C36A56B1F45701400623131 /* FriendTableViewCell.swift in Sources */,
+				6C1E6EE81EF8DEB900C061C4 /* AppDelegate.swift in Sources */,
+				6CF4FF791F43277900502EFA /* AddFriendViewController.swift in Sources */,
+				6C9A8BB61EFD5DCF0013C8B4 /* ServiceManager.swift in Sources */,
+				6C36A5481F4544C400623131 /* Extensions.swift in Sources */,
+				6C769C281EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift in Sources */,
+				6C769C221EFFD6DF0068F27D /* SetUpTableViewController.swift in Sources */,
+				6CC196FA1F0DC30D00ABF518 /* Reachability.m in Sources */,
+				6C2DF86F1F08AEDF00D089F7 /* PickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C1E6EEB1EF8DEB900C061C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1E6EEC1EF8DEB900C061C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C1E6EF01EF8DEB900C061C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1E6EF11EF8DEB900C061C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C1E6EF41EF8DEB900C061C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: a0989297603@gmail.com (6LW4CHVG64)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: a0989297603@gmail.com (6LW4CHVG64)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "33027e1d-fcf6-4477-ade3-ddc18358e9c2";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C1E6EF51EF8DEB900C061C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C1E6EF71EF8DEB900C061C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDF4C0E8D5334F6CDC53A14 /* Pods-FindMyFriends.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FindMyFriends/FindMyFriends.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: a0989297603@gmail.com (6LW4CHVG64)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93QT5L8PP6;
+				INFOPLIST_FILE = FindMyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nick.FindMyFriends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = FindMyFriends/BridgeHeader.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6C1E6EF81EF8DEB900C061C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD84EA1712E58BA7D9DB3478 /* Pods-FindMyFriends.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FindMyFriends/FindMyFriends.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93QT5L8PP6;
+				INFOPLIST_FILE = FindMyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nick.FindMyFriends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = FindMyFriends/BridgeHeader.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C1E6EDF1EF8DEB900C061C4 /* Build configuration list for PBXProject "FindMyFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1E6EF41EF8DEB900C061C4 /* Debug */,
+				6C1E6EF51EF8DEB900C061C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1E6EF61EF8DEB900C061C4 /* Build configuration list for PBXNativeTarget "FindMyFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1E6EF71EF8DEB900C061C4 /* Debug */,
+				6C1E6EF81EF8DEB900C061C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C1E6EDC1EF8DEB900C061C4 /* Project object */;
+}

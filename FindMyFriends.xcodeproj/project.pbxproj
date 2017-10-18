@@ -33,6 +33,7 @@
 		6C769C281EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C271EFFF2880068F27D /* BackgroundUpdateBodyTableViewCell.swift */; };
 		6C769C2D1EFFF82D0068F27D /* SQLiteConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769C2C1EFFF82D0068F27D /* SQLiteConnect.swift */; };
 		6C9A8BB61EFD5DCF0013C8B4 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A8BB51EFD5DCF0013C8B4 /* ServiceManager.swift */; };
+		6C9D7B891F9721170024B0F0 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6C9D7B881F9721170024B0F0 /* America.gpx */; };
 		6CA5BDEC1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5BDEB1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift */; };
 		6CA9CDB11F5463FA00F825DD /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6CA9CDB01F5463FA00F825DD /* bell.mp3 */; };
 		6CA9CDF61F55A0F700F825DD /* NickMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA9CDF51F55A0F700F825DD /* NickMKAnnotationView.swift */; };
@@ -76,6 +77,7 @@
 		6C769C2B1EFFF77A0068F27D /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		6C769C2C1EFFF82D0068F27D /* SQLiteConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteConnect.swift; sourceTree = "<group>"; };
 		6C9A8BB51EFD5DCF0013C8B4 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		6C9D7B881F9721170024B0F0 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
 		6CA5BDEB1F59A87F00B88D5E /* ManagerFriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerFriendsTableViewCell.swift; sourceTree = "<group>"; };
 		6CA9CDB01F5463FA00F825DD /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		6CA9CDF51F55A0F700F825DD /* NickMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NickMKAnnotationView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		6CE8663B1F07727C00684672 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6C9D7B881F9721170024B0F0 /* America.gpx */,
 				6CA9CDB01F5463FA00F825DD /* bell.mp3 */,
 				6CB73D3D1F05070D00816A92 /* sqlite3.sqlite */,
 				6C1E6EE71EF8DEB900C061C4 /* AppDelegate.swift */,
@@ -307,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9D7B891F9721170024B0F0 /* America.gpx in Resources */,
 				6C1E6EF21EF8DEB900C061C4 /* LaunchScreen.storyboard in Resources */,
 				6C1E6EEF1EF8DEB900C061C4 /* Assets.xcassets in Resources */,
 				6C1E6EED1EF8DEB900C061C4 /* Main.storyboard in Resources */,

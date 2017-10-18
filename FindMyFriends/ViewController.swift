@@ -52,7 +52,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         
         if profileManager.userID == nil{
             
@@ -65,10 +65,10 @@ class ViewController: UIViewController{
             return
         }
         
-
+        
         switch CLLocationManager.authorizationStatus(){
         case .authorizedAlways:
-         locationManager.startUpdatingLocation()
+            locationManager.startUpdatingLocation()
         //Refuse
         case .denied:
             
@@ -76,8 +76,8 @@ class ViewController: UIViewController{
             
         //First time
         case .notDetermined:
-        
-             locationManager.requestAlwaysAuthorization()
+            
+            locationManager.requestAlwaysAuthorization()
             
         default:
             break
@@ -99,12 +99,12 @@ class ViewController: UIViewController{
         NotificationCenter.default.addObserver(self, selector:#selector(setRefreshDataInterval),
                                                name: NSNotification.Name(rawValue:notifyName_updateFrequency),
                                                object: nil)
-
+        
         
         myMapView.userTrackingMode = .follow
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.pausesLocationUpdatesAutomatically = false;
-        locationManager.distanceFilter = Double(10)
+        locationManager.distanceFilter = 10
         locationManager.activityType = .automotiveNavigation
         locationManager.delegate = self
         
@@ -122,7 +122,7 @@ class ViewController: UIViewController{
         
         
         locationManager.desiredAccuracy = profileManager.desiredAccuracy
-    
+        
         if profileManager.gotoBeginRecord{
             timerDisplayAction(self)
             profileManager.gotoBeginRecord = false
@@ -136,7 +136,7 @@ class ViewController: UIViewController{
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue:notification_downloadDone), object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue:notifyName_updateFrequency), object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue:notifyName_logOut), object: nil)
-
+        
         SHLog(message:"---ViewController---deinit")
         
     }
@@ -171,7 +171,7 @@ class ViewController: UIViewController{
                 
                 
             }
-        
+            
             self.view.layoutIfNeeded()
         }
     }
@@ -191,12 +191,12 @@ class ViewController: UIViewController{
         
         navigationController?.popToViewController(self, animated: false)
         
-
+        
     }
     
     @IBAction func showNameBtn(_ sender: UIButton) {
         
-    
+        
         if showName.isSelected{
             showName.isSelected = false
             showName.backgroundColor = UIColor(white:1, alpha: showName.alpha)
@@ -247,7 +247,7 @@ class ViewController: UIViewController{
             
         }
         
-
+        
     }
     
     @IBAction func timerDisplayAction(_ sender: Any) {
@@ -308,9 +308,9 @@ class ViewController: UIViewController{
         
         navigationItem.rightBarButtonItems = [userTrackingItem,refreshBtn]
         
-       
-
-    
+        
+        
+        
         for VC in self.childViewControllers{
             
             if VC.isKind(of:FriendsViewController.self){
@@ -327,7 +327,7 @@ class ViewController: UIViewController{
     
     @objc func showFriendsOnMap(){
         
-
+        
         myMapView.removeAnnotations(myMapView.annotations)
         
         for friend in serviceManager.friends {
@@ -490,8 +490,8 @@ class ViewController: UIViewController{
         }
     }
     
-    func showAlertForNoLocation(){
-        let alertVC = UIAlertController(title: "紀錄", message: "移動距離未達五公尺或未取得位置，無法紀錄", preferredStyle:.alert)
+    func showAlertNotRecord(){
+        let alertVC = UIAlertController(title: "紀錄", message: "移動距離過少或未取得位置，無法紀錄", preferredStyle:.alert)
         let action = UIAlertAction(title: "確認", style: .cancel, handler: nil)
         alertVC.addAction(action)
         present(alertVC, animated: true, completion: nil)
@@ -547,20 +547,20 @@ extension ViewController:MKMapViewDelegate{
             result = NickMKAnnotationView(annotation:nickAnnotation,reuseIdentifier: identifier)
             
             
-            let label = UILabel()
+            let namelabel = UILabel()
             
             if let myTitle = nickAnnotation.title{
                 
-                label.text = " \(myTitle) "
-                label.sizeToFit()
-                label.frame.origin = CGPoint(x:-label.frame.width-5, y: 0)
-                label.backgroundColor = UIColor.white
-                label.alpha = 0.9
-                label.setShadowView(0, CGSize.zero, 0.3)
+                namelabel.text = " \(myTitle) "
+                namelabel.sizeToFit()
+                namelabel.frame.origin = CGPoint(x:-namelabel.frame.width-5, y: 0)
+                namelabel.backgroundColor = UIColor.white
+                namelabel.alpha = 0.9
+                namelabel.setShadowView(0,CGSize.zero, 0.3)
                 
-                result?.addSubview(label)
-                label.isHidden = !showName.isSelected
-                labelArray.append(label)
+                result?.addSubview(namelabel)
+                namelabel.isHidden = !showName.isSelected
+                labelArray.append(namelabel)
                 
             }
             
@@ -579,7 +579,6 @@ extension ViewController:MKMapViewDelegate{
         }
         
         
-        
         if let urlStr = nickAnnotation.imageURLStr{
             result?.imageView.loadImageWithNSCach(url:urlStr)
             
@@ -588,7 +587,7 @@ extension ViewController:MKMapViewDelegate{
             result?.imageView.image = UIImage(named: "user")
         }
         
-
+        
         result?.canShowCallout = true
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 0, y: 0, width:50, height:50)
@@ -603,12 +602,17 @@ extension ViewController:MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
-        let targetCoordinate = view.annotation?.coordinate
-        let targetMark = MKPlacemark(coordinate: targetCoordinate!)
-        let target = MKMapItem(placemark: targetMark)
-        target.name = (view.annotation?.title)!
-        let options = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking]
-        target.openInMaps(launchOptions: options)
+     
+        if let annotation = view.annotation,
+            let name = annotation.title{
+            let targetCoordinate = annotation.coordinate
+            let targetMark = MKPlacemark(coordinate: targetCoordinate)
+            let target = MKMapItem(placemark: targetMark)
+            target.name = name
+            let options = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking]
+            target.openInMaps(launchOptions: options)
+        }
+       
         
     }
     
@@ -623,7 +627,14 @@ extension ViewController:MKMapViewDelegate{
         
     }
     
-    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let coordinate = view.annotation?.coordinate{
+            
+            let region = MKCoordinateRegionMakeWithDistance(coordinate,1000, 1000)
+            myMapView.setRegion(region, animated: true)
+        }
+        
+    }
     
 }
 
@@ -662,15 +673,15 @@ extension ViewController:UIGestureRecognizerDelegate{
 extension ViewController:CLLocationManagerDelegate{
     
     
-   
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         
+        
         
         guard let clLocation = locations.last else{
             return
         }
-       
+        
         let coordinate = clLocation.coordinate
         
         
@@ -775,9 +786,9 @@ extension ViewController:TimerVCDelegate{
         case .none:
             recordIsBegin = false
             
-            // if lat lon empty don't  save
-            if timerManager.distance < 5{
-                showAlertForNoLocation()
+            // if lat lon empty don't save
+            if timerManager.distance < 10{
+                showAlertNotRecord()
                 break
             }
             

@@ -11,7 +11,7 @@ target 'FindMyFriends' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SVProgressHUD'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
 
 end

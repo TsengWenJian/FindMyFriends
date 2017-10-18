@@ -21,9 +21,9 @@ func SHLog<T>(message:T,
 }
 
 
-let imageCach = NSCache<AnyObject, AnyObject>()
 
 
+//MARK: - UIView
 extension UIView{
     
     func setShadowView(_ cornerRadius:CGFloat,_ offSet:CGSize, _ Opacity:Float){
@@ -37,6 +37,7 @@ extension UIView{
     
     
 }
+//MARK: - UIImage
 extension UIImage{
     
     
@@ -110,8 +111,8 @@ extension UIImage{
     }
 }
 
-
-
+let imageCach = NSCache<AnyObject, AnyObject>()
+//MARK: - UIImageView
 extension UIImageView{
     
     func loadImageWithNSCach(url:String){
@@ -120,7 +121,6 @@ extension UIImageView{
         
         if  let cachImage = imageCach.object(forKey: url as AnyObject),
             let cachData = cachImage as? Data{
-            
             
             self.image = UIImage(data:cachData)
             

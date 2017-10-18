@@ -24,16 +24,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FacebookCore.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FacebookLogin.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-FindMyFriends.xcscheme</key>
 		<dict>
 			<key>isShown</key>

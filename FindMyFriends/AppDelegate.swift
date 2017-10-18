@@ -9,8 +9,9 @@
 import UIKit
 
 import UserNotifications
+
 import FBSDKCoreKit
-import FacebookLogin
+import FBSDKLoginKit
 import CoreLocation
 
 
@@ -22,16 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
-        // Override point for customization after application launch.
+    
         //iOS 8
         // let settings = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
         // application.registerUserNotificationSettings(settings)
         // application.registerForRemoteNotifications()
-        
-        
-        
+    
+     
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         let notifiCenter = UNUserNotificationCenter.current()
@@ -43,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
                 SHLog(message: "iOS request notification success")
             }else{
                 
-                SHLog(message: "iOS 10 request notification fail")
+                SHLog(message: "iOS  request notification fail")
             }
         }
         
@@ -52,10 +50,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         if  ProfileManager.standard.deviceToken == nil{
             UIApplication.shared.applicationIconBadgeNumber = 0
         }
+        
         copySqliteToDocument()
         
         return true
     }
+    
+    
     
     func copySqliteToDocument(){
         
@@ -79,17 +80,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
    
     
-    
-   
-    
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
         return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
         
     }
     
-    
-    
+
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
@@ -101,8 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         deviceTokenString = deviceTokenString.replacingOccurrences(of: " ", with: "")
         ProfileManager.standard.setdeviceToken(token:deviceTokenString)
         
-        
-        
+    
     }
     
     

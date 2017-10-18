@@ -26,7 +26,10 @@ class SetUpTableViewController: UITableViewController {
         let manager = MyLocationRecordsManager(.LocationRecord)
         recordArray = manager.getLocatoinRecord(cond: nil, order: "id desc")
         
-        NotificationCenter.default.addObserver(self, selector:#selector(receivedPushNotice), name: NSNotification.Name(rawValue:notifyName_downloadFriends), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector:#selector(receivedPushNotice),
+                                               name: NSNotification.Name(rawValue:notifyName_downloadFriends),
+                                               object: nil)
         
         
         
@@ -51,8 +54,6 @@ class SetUpTableViewController: UITableViewController {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue:notifyName_downloadFriends), object: nil)
         
     }
-    
-    
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -102,16 +102,12 @@ class LoginViewController: UIViewController {
     }
     
     
-    
-    
-    
+
     func register(name:String,email:String,password:String){
         
         let dict = [postServiceKey.name:name,
                     postServiceKey.account:email,
                     postServiceKey.password:password]
-        
-        
         
         
         
@@ -158,11 +154,7 @@ class LoginViewController: UIViewController {
                 
                 
                 self.fetchProfile(userID:myResult.token.userID)
-                
-                
-                
-                
-                
+            
             }
         }
         
@@ -171,7 +163,7 @@ class LoginViewController: UIViewController {
     func fetchProfile(userID:String){
         
         
-        
+
         let parameters = ["fields": "email, picture.type(large),name"]
         
         SVProgressHUD.setDefaultMaskType(.black)
